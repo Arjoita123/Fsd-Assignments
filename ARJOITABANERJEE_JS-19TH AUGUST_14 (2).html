@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> Enter a string</h1>
+	<input type="text" id="str"><br>
+
+<h1> Enter second string</h1>
+	<input type="text" id="sstr"><br>
+	<button type="button" onclick=" return myfunction()">Click Me!</button>
+	<script type="text/javascript">
+		function myfunction(){
+			var a1=document.getElementById("str").value;
+		var a2=document.getElementById("sstr").value;
+		var k=a2.length;
+		if(a1.substring(0,k)==a2){
+			alert("true");
+		}
+		else {
+			alert("false");
+		}
+	}
+</script>
+</body>
+</html>

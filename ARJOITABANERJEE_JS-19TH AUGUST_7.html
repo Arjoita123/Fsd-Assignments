@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> Enter a string</h1>
+	<input type="text" id="str"><br>
+	<h1> Enter a substring</h1>
+	<input type="text" id="substr"><br>
+	<button type="button" onclick=" return myfunction()">Click Me!</button>
+	<script type="text/javascript">
+		function myfunction(){
+		var a1=document.getElementById("str").value;
+		var a2=document.getElementById("substr").value;
+		var l=a2.length;
+		var count=0;
+		for(var x=0;x<a1.length;x++){
+			if(a1.substring(x,x+l)==a2){
+				count=count+1;
+			}
+		}
+		// var b=a.split(" ");
+		// b.sort();
+		document.write(count);
+	}
+</script>
+</body>
+</html>

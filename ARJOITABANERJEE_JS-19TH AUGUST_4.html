@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> Enter a string</h1>
+	<input type="text" id="str">
+	<button type="button" onclick=" return myfunction()">Click Me!</button>
+	<script type="text/javascript">
+		function myfunction(){
+		var a=document.getElementById("str").value;
+		var b=a.split(" ");
+		for(var x=0;x<b.length;x++){
+			var y=b[x].slice(0,1);
+			var k=b[x].slice(1,b[x].length);
+			y=y.toUpperCase();
+			b[x]=y+k;
+		
+		}
+		var c=b[0];
+		for(var x=1;x<b.length;x++){
+             c=c+" "+b[x];
+		}
+		console.log(c);
+	}
+	</script>
+</body>
+</html>

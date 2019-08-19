@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+Enter a number:
+<input type="text" id="number"><br>
+<button type="button" onclick=" return myfunction()">Click Me!</button>
+<script type="text/javascript" >
+	function myfunction(){
+		// var y=prompt("guess the number");
+		 var x=document.getElementById("number").value;
+       if(x>15 ||x<0){
+       	alert("number should be between 0 to 15");
+      }
+      var y=prompt("guess the number");
+		
+		if(x==y){
+			alert("right on");
+		}
+		else{
+			alert("Unlucky:(");
+		}
+
+}
+
+
+</script>
+</body>
+</html>

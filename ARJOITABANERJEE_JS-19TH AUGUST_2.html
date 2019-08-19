@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1> Enter a number</h1>
+	<input type="number" id="num">
+	<button type="button" onclick=" return myfunction()">Click Me!</button>
+	<script type="text/javascript">
+		function myfunction(){
+			var a=document.getElementById("num").value;
+			var b=new Array();
+            var x=0;
+            for(x=0;x<a.length;x++){
+            	var res=a.slice(x,x+1);
+            	b[x]=res;
+            }
+            console.log(b);
+            for(var y=0;y<b.length;y++){
+            	document.write(b[y]);
+            	console.log(b[y]);
+            }
+		}
+	</script>
+</body>
+</html>
